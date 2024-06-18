@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulačka</title>
+    <script src="{{ url_for('static', filename='../static/main.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <form id="calcForm">
+            <input type="text" id="num1" placeholder="10">
+            <select id="operation">
+                <option value="add">Scítanie</option>
+                <option value="subtract">Odcítanie</option>
+                <option value="multiply">Nasobenie</option>
+                <option value="divide">Delenie</option>
+            </select>
+            <input type="text" id="num2" placeholder="2">
+            <button type="button" onclick="calculate()">Vypocítat</button>
+        </form>
+        <div class="result" id="result">Vysledok:</div>
+    </div>
+
+
+</body>
+</html>
